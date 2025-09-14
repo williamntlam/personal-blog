@@ -1,10 +1,11 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { BlogPosts } from './blog-posts/blog-posts';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, AboutMeComponent],
+  imports: [CommonModule, AboutMeComponent, BlogPosts],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
