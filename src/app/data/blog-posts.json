@@ -1,0 +1,133 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Building My First Angular Application",
+      "excerpt": "A deep dive into the challenges and learnings from creating my first production-ready Angular app...",
+      "category": "Development",
+      "date": "2024-12-15",
+      "readTime": "8 min read",
+      "tags": ["Angular", "TypeScript", "Frontend", "Learning"],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "The Art of Clean Code",
+      "excerpt": "Reflections on writing maintainable, readable code and the principles that guide my development process...",
+      "category": "Learning",
+      "date": "2024-12-10",
+      "readTime": "6 min read",
+      "tags": ["Clean Code", "Best Practices", "Programming", "Software Engineering"],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Balancing Studies and Side Projects",
+      "excerpt": "How I manage my time between academic responsibilities and personal development projects...",
+      "category": "Life",
+      "date": "2024-12-05",
+      "readTime": "5 min read",
+      "tags": ["Time Management", "Student Life", "Productivity", "Balance"],
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "My Journey with TypeScript",
+      "excerpt": "How TypeScript transformed my JavaScript development workflow and improved code quality...",
+      "category": "Development",
+      "date": "2024-11-28",
+      "readTime": "7 min read",
+      "tags": ["TypeScript", "JavaScript", "Type Safety", "Development"],
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "First Steps in Software Development",
+      "excerpt": "Lessons learned from my first internships and the transition from student to developer...",
+      "category": "Career",
+      "date": "2024-11-20",
+      "readTime": "9 min read",
+      "tags": ["Career", "Internship", "Professional Development", "Experience"],
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Effective Study Techniques for Programming",
+      "excerpt": "Strategies that helped me learn complex programming concepts more efficiently...",
+      "category": "Learning",
+      "date": "2024-11-15",
+      "readTime": "6 min read",
+      "tags": ["Study Tips", "Learning", "Programming", "Education"],
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "The Importance of Code Reviews",
+      "excerpt": "Why code reviews are crucial for team development and how to give constructive feedback...",
+      "category": "Development",
+      "date": "2024-11-08",
+      "readTime": "5 min read",
+      "tags": ["Code Review", "Team Work", "Best Practices", "Collaboration"],
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Life Lessons from Debugging",
+      "excerpt": "What debugging has taught me about problem-solving, patience, and persistence in life...",
+      "category": "Life Lessons",
+      "date": "2024-11-01",
+      "readTime": "4 min read",
+      "tags": ["Debugging", "Problem Solving", "Life Lessons", "Mindset"],
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Building My Personal Brand as a Developer",
+      "excerpt": "How I'm working on establishing my presence in the tech community and building connections...",
+      "category": "Career",
+      "date": "2024-10-25",
+      "readTime": "7 min read",
+      "tags": ["Personal Brand", "Networking", "Career", "Professional Growth"],
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Reflections on My First Year of Coding",
+      "excerpt": "Looking back at the challenges, victories, and growth during my first year of serious programming...",
+      "category": "Reflections",
+      "date": "2024-10-18",
+      "readTime": "8 min read",
+      "tags": ["Reflection", "Growth", "Learning", "Journey"],
+      "featured": false
+    },
+    {
+      "id": 11,
+      "title": "The Power of Version Control",
+      "excerpt": "How Git transformed my development workflow and why every developer should master it...",
+      "category": "Development",
+      "date": "2024-10-12",
+      "readTime": "6 min read",
+      "tags": ["Git", "Version Control", "Development", "Tools"],
+      "featured": false
+    },
+    {
+      "id": 12,
+      "title": "Overcoming Imposter Syndrome in Tech",
+      "excerpt": "My personal journey with imposter syndrome and strategies that helped me build confidence...",
+      "category": "Life Lessons",
+      "date": "2024-10-05",
+      "readTime": "9 min read",
+      "tags": ["Imposter Syndrome", "Confidence", "Mental Health", "Career"],
+      "featured": false
+    }
+  ],
+  "categories": [
+    "Development",
+    "Learning", 
+    "Life",
+    "Career",
+    "Life Lessons",
+    "Reflections"
+  ]
+}
+
