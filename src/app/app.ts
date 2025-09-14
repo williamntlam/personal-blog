@@ -1,15 +1,17 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule],
+  imports: [CommonModule, AboutMeComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App implements OnInit {
   protected readonly title = signal('personal-blog');
   protected isDarkMode = true;
+  protected showAboutMe = false;
 
   ngOnInit() {
     // Set dark mode by default
@@ -23,5 +25,13 @@ export class App implements OnInit {
     } else {
       document.documentElement.classList.remove('dark');
     }
+  }
+
+  openAboutMe() {
+    this.showAboutMe = true;
+  }
+
+  closeAboutMe() {
+    this.showAboutMe = false;
   }
 }

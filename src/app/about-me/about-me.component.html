@@ -1,0 +1,83 @@
+<!-- About Me Modal Overlay -->
+<div 
+  *ngIf="isVisible" 
+  class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+  (click)="onOverlayClick($event)">
+  
+  <!-- About Me Widget -->
+  <div class="bg-slate-900 rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto border border-slate-700 animate-fade-in">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-6">
+      <h2 class="text-3xl font-light text-white">About Me</h2>
+      <button 
+        (click)="onClose()"
+        class="text-slate-400 hover:text-white transition-colors duration-200 text-2xl">
+        ×
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="space-y-6">
+      
+      <!-- Introduction -->
+      <div>
+        <h3 class="text-xl text-slate-200 mb-3 font-light">Who I Am</h3>
+        <p class="text-slate-400 leading-relaxed">
+          I'm a passionate software developer and student who loves exploring the intersection 
+          of technology and creativity. Currently pursuing my studies while building meaningful 
+          projects that solve real-world problems.
+        </p>
+      </div>
+
+      <!-- Interests -->
+      <div>
+        <h3 class="text-xl text-slate-200 mb-3 font-light">What I Love</h3>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-slate-800 px-4 py-3 rounded-lg">
+            <span class="text-slate-300 text-sm">Web Development</span>
+          </div>
+          <div class="bg-slate-800 px-4 py-3 rounded-lg">
+            <span class="text-slate-300 text-sm">Problem Solving</span>
+          </div>
+          <div class="bg-slate-800 px-4 py-3 rounded-lg">
+            <span class="text-slate-300 text-sm">Learning</span>
+          </div>
+          <div class="bg-slate-800 px-4 py-3 rounded-lg">
+            <span class="text-slate-300 text-sm">Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Focus -->
+      <div>
+        <h3 class="text-xl text-slate-200 mb-3 font-light">Current Focus</h3>
+        <p class="text-slate-400 leading-relaxed">
+          I'm currently focused on mastering modern web technologies, particularly Angular, 
+          and exploring how to create more intuitive user experiences. I believe in the 
+          power of clean code and thoughtful design.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-xl text-slate-200 mb-3 font-light">Let's Connect</h3>
+        <p class="text-slate-400 leading-relaxed">
+          I'm always interested in connecting with fellow developers, students, and 
+          anyone passionate about technology. Feel free to reach out!
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 pt-6 border-t border-slate-700">
+      <button 
+        (click)="onClose()"
+        class="border-2 border-white text-white px-6 py-3 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
+        Close
+      </button>
+    </div>
+
+  </div>
+</div>

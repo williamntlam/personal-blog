@@ -37,7 +37,9 @@
           <button class="border-2 border-white text-white px-8 py-4 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
             Explore Posts
           </button>
-          <button class="border-2 border-white text-white px-8 py-4 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
+          <button 
+            (click)="openAboutMe()"
+            class="border-2 border-white text-white px-8 py-4 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
             About Me
           </button>
         </div>
@@ -45,3 +47,9 @@
     </div>
   </div>
 </section>
+
+<!-- About Me Modal -->
+<app-about-me 
+  [isVisible]="showAboutMe" 
+  (close)="closeAboutMe()">
+</app-about-me>
