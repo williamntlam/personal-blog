@@ -10,6 +10,7 @@ export interface BlogPost {
   readTime: string;
   tags: string[];
   featured: boolean;
+  content?: string;
 }
 
 export interface BlogData {

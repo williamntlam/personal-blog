@@ -31,26 +31,12 @@
     </header>
 
     <!-- Blog Post Content -->
-    <article class="prose prose-lg prose-invert max-w-none">
+    <article class="max-w-none">
       <div class="text-slate-300 leading-relaxed text-lg mb-8">
         <p class="text-xl text-slate-200 mb-6">{{ post.excerpt }}</p>
         
-        <!-- This is where the full blog post content would go -->
-        <!-- For now, we'll show a placeholder since we don't have full content in the JSON -->
-        <div class="bg-slate-800 rounded-2xl p-8 mb-8">
-          <h2 class="text-2xl font-light text-white mb-4">Full Blog Post Content</h2>
-          <p class="text-slate-300 leading-relaxed mb-4">
-            This is where the full content of the blog post would be displayed. In a real implementation, 
-            you would either store the full content in your JSON data or fetch it from a CMS or database.
-          </p>
-          <p class="text-slate-300 leading-relaxed mb-4">
-            The blog post would include detailed explanations, code examples, personal insights, 
-            and any other content that provides value to your readers.
-          </p>
-          <p class="text-slate-300 leading-relaxed">
-            For now, this serves as a placeholder to demonstrate the blog post viewing functionality.
-          </p>
-        </div>
+        <!-- Full blog post content -->
+        <div class="prose prose-lg prose-invert max-w-none" [innerHTML]="post.content"></div>
       </div>
 
       <!-- Tags -->

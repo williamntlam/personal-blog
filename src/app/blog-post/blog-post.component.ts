@@ -6,8 +6,7 @@ import { BlogDataService, BlogPost } from '../services/blog-data';
 @Component({
   selector: 'app-blog-post',
   imports: [CommonModule],
-  templateUrl: './blog-post.component.html',
-  styleUrl: './blog-post.component.css'
+  templateUrl: './blog-post.component.html'
 })
 export class BlogPostComponent implements OnInit {
   post: BlogPost | undefined;
