@@ -1,9 +1,9 @@
-<!-- Blog Posts Overview Section -->
-<section class="bg-slate-900 py-20 px-8">
+<!-- Blog Posts Page -->
+<section class="min-h-screen bg-slate-900 py-20 px-8">
   <div class="max-w-6xl mx-auto">
-    <!-- Section Header -->
+    <!-- Page Header -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-light text-white mb-4">Recent Posts</h2>
+      <h1 class="text-5xl font-light text-white mb-4">Blog Posts</h1>
       <p class="text-lg text-slate-400 max-w-2xl mx-auto">
         Thoughts, insights, and experiences from my journey as a developer and student
       </p>
@@ -73,12 +73,78 @@
           </button>
         </div>
       </article>
+
+      <!-- Additional Blog Post Cards -->
+      <article class="bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all duration-300 group">
+        <div class="mb-6">
+          <span class="inline-block bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-sm font-light mb-4">
+            Technology
+          </span>
+          <h3 class="text-xl font-light text-white mb-3 group-hover:text-slate-200 transition-colors">
+            My Journey with TypeScript
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            How TypeScript transformed my JavaScript development workflow and improved code quality...
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-slate-500 text-sm">Nov 28, 2024</span>
+          <button class="text-white text-sm font-light hover:text-slate-300 transition-colors">
+            Read More →
+          </button>
+        </div>
+      </article>
+
+      <article class="bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all duration-300 group">
+        <div class="mb-6">
+          <span class="inline-block bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-sm font-light mb-4">
+            Career
+          </span>
+          <h3 class="text-xl font-light text-white mb-3 group-hover:text-slate-200 transition-colors">
+            First Steps in Software Development
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Lessons learned from my first internships and the transition from student to developer...
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-slate-500 text-sm">Nov 20, 2024</span>
+          <button class="text-white text-sm font-light hover:text-slate-300 transition-colors">
+            Read More →
+          </button>
+        </div>
+      </article>
+
+      <article class="bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all duration-300 group">
+        <div class="mb-6">
+          <span class="inline-block bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-sm font-light mb-4">
+            Learning
+          </span>
+          <h3 class="text-xl font-light text-white mb-3 group-hover:text-slate-200 transition-colors">
+            Effective Study Techniques for Programming
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Strategies that helped me learn complex programming concepts more efficiently...
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-slate-500 text-sm">Nov 15, 2024</span>
+          <button class="text-white text-sm font-light hover:text-slate-300 transition-colors">
+            Read More →
+          </button>
+        </div>
+      </article>
     </div>
 
-    <!-- View All Posts Button -->
+    <!-- Back to Home Button -->
     <div class="text-center mt-12">
+      <button 
+        (click)="goHome()"
+        class="border-2 border-white text-white px-8 py-4 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300 mr-4">
+        ← Back to Home
+      </button>
       <button class="border-2 border-white text-white px-8 py-4 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
-        View All Posts
+        Load More Posts
       </button>
     </div>
   </div>
