@@ -50,7 +50,8 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" *ngIf="filteredPosts.length > 0">
       <article 
         *ngFor="let post of filteredPosts"
-        class="bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all duration-300 group">
+        (click)="viewPost(post.id)"
+        class="bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all duration-300 group cursor-pointer">
         <div class="mb-6">
           <span class="inline-block bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-sm font-light mb-4">
             {{ post.category }}
@@ -64,9 +65,9 @@
         </div>
         <div class="flex items-center justify-between">
           <span class="text-slate-500 text-sm">{{ formatDate(post.date) }}</span>
-          <button class="text-white text-sm font-light hover:text-slate-300 transition-colors">
+          <span class="text-white text-sm font-light group-hover:text-slate-300 transition-colors">
             Read More →
-          </button>
+          </span>
         </div>
         <div class="mt-4 flex flex-wrap gap-2">
           <span 

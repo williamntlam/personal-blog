@@ -1,0 +1,105 @@
+<!-- Blog Post Page -->
+<section class="min-h-screen bg-slate-900 py-20 px-8" *ngIf="post">
+  <div class="max-w-4xl mx-auto">
+    <!-- Back Navigation -->
+    <div class="mb-8">
+      <button 
+        (click)="goBack()"
+        class="flex items-center text-slate-400 hover:text-white transition-colors">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        Back to Blog
+      </button>
+    </div>
+
+    <!-- Blog Post Header -->
+    <header class="mb-12">
+      <div class="mb-6">
+        <span class="inline-block bg-slate-700 text-slate-300 px-4 py-2 rounded-full text-sm font-light mb-6">
+          {{ post.category }}
+        </span>
+        <h1 class="text-4xl md:text-5xl font-light text-white mb-6 leading-tight">
+          {{ post.title }}
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-slate-400 text-sm">
+          <span>{{ formatDate(post.date) }}</span>
+          <span>•</span>
+          <span>{{ post.readTime }}</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="prose prose-lg prose-invert max-w-none">
+      <div class="text-slate-300 leading-relaxed text-lg mb-8">
+        <p class="text-xl text-slate-200 mb-6">{{ post.excerpt }}</p>
+        
+        <!-- This is where the full blog post content would go -->
+        <!-- For now, we'll show a placeholder since we don't have full content in the JSON -->
+        <div class="bg-slate-800 rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-light text-white mb-4">Full Blog Post Content</h2>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            This is where the full content of the blog post would be displayed. In a real implementation, 
+            you would either store the full content in your JSON data or fetch it from a CMS or database.
+          </p>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            The blog post would include detailed explanations, code examples, personal insights, 
+            and any other content that provides value to your readers.
+          </p>
+          <p class="text-slate-300 leading-relaxed">
+            For now, this serves as a placeholder to demonstrate the blog post viewing functionality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="mb-12">
+        <h3 class="text-lg font-light text-white mb-4">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+          <span 
+            *ngFor="let tag of post.tags"
+            class="text-sm text-slate-400 bg-slate-700 px-3 py-1 rounded-full">
+            {{ tag }}
+          </span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Navigation -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-between items-center pt-8 border-t border-slate-700">
+      <button 
+        (click)="goBack()"
+        class="border-2 border-white text-white px-6 py-3 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
+        ← Back to Blog
+      </button>
+      <button 
+        (click)="goHome()"
+        class="border-2 border-slate-600 text-slate-300 px-6 py-3 rounded-full font-light hover:bg-slate-600 hover:text-white transition-all duration-300">
+        Home
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Post Not Found -->
+<section class="min-h-screen bg-slate-900 py-20 px-8" *ngIf="!post">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl font-light text-white mb-6">Post Not Found</h1>
+    <p class="text-lg text-slate-400 mb-8">
+      The blog post you're looking for doesn't exist or has been removed.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button 
+        (click)="goBack()"
+        class="border-2 border-white text-white px-6 py-3 rounded-full font-light hover:bg-white hover:text-slate-900 transition-all duration-300">
+        ← Back to Blog
+      </button>
+      <button 
+        (click)="goHome()"
+        class="border-2 border-slate-600 text-slate-300 px-6 py-3 rounded-full font-light hover:bg-slate-600 hover:text-white transition-all duration-300">
+        Home
+      </button>
+    </div>
+  </div>
+</section>

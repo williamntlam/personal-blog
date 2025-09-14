@@ -79,4 +79,8 @@ export class BlogPostsPage implements OnInit {
   goHome() {
     this.router.navigate(['/']);
   }
+
+  viewPost(postId: number) {
+    this.router.navigate(['/blog', postId]);
+  }
 }
