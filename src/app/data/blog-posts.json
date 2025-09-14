@@ -74,7 +74,7 @@
       "id": 8,
       "title": "Life Lessons from Debugging",
       "excerpt": "What debugging has taught me about problem-solving, patience, and persistence in life...",
-      "category": "Life Lessons",
+      "category": "Life",
       "date": "2024-11-01",
       "readTime": "4 min read",
       "tags": ["Debugging", "Problem Solving", "Life Lessons", "Mindset"],
@@ -114,7 +114,7 @@
       "id": 12,
       "title": "Overcoming Imposter Syndrome in Tech",
       "excerpt": "My personal journey with imposter syndrome and strategies that helped me build confidence...",
-      "category": "Life Lessons",
+      "category": "Life",
       "date": "2024-10-05",
       "readTime": "9 min read",
       "tags": ["Imposter Syndrome", "Confidence", "Mental Health", "Career"],
@@ -126,7 +126,6 @@
     "Learning", 
     "Life",
     "Career",
-    "Life Lessons",
     "Reflections"
   ]
 }
