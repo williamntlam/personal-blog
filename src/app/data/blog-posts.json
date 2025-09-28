@@ -13,12 +13,13 @@
     {
       "id": 2,
       "title": "Lessons Beyond School - What Volunteering at a Food Bank Taught Me",
-      "excerpt": "I volunteered at my local food bank to find the answer to one question. Here's what I learned.",
+      "excerpt": "I volunteered at my local food bank. Here's what I learned.",
       "category": "Learning",
       "date": "2025-09-14",
       "readTime": "10 min read",
       "tags": ["Life", "Learning", "Reflection"],
-      "featured": true
+      "featured": true,
+      "contentId": "2"
     },
     {
       "id": 3,

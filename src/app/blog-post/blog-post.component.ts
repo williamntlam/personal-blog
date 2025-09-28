@@ -49,4 +49,10 @@ export class BlogPostComponent implements OnInit {
   goHome() {
     this.router.navigate(['/']);
   }
+
+  formatContent(content: string | undefined): string {
+    if (!content) return '';
+    // Convert \n\n to </p><br><p> and wrap in <p> tags for extra spacing
+    return '<p>' + content.replace(/\n\n/g, '</p><br><p>') + '</p>';
+  }
 }

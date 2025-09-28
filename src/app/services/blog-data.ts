@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import blogPostsData from '../data/blog-posts.json';
+import blogContentData from '../data/blog-content.json';
 
 export interface BlogPost {
   id: number;
@@ -10,6 +11,7 @@ export interface BlogPost {
   readTime: string;
   tags: string[];
   featured: boolean;
+  contentId?: string;
   content?: string;
 }
 
@@ -18,11 +20,16 @@ export interface BlogData {
   categories: string[];
 }
 
+export interface BlogContent {
+  content: { [key: string]: string };
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class BlogDataService {
   private data: BlogData = blogPostsData;
+  private contentData: BlogContent = blogContentData;
 
   constructor() { }
 
@@ -39,7 +46,11 @@ export class BlogDataService {
   }
 
   getPostById(id: number): BlogPost | undefined {
-    return this.data.posts.find(post => post.id === id);
+    const post = this.data.posts.find(post => post.id === id);
+    if (post && post.contentId) {
+      post.content = this.contentData.content[post.contentId];
+    }
+    return post;
   }
 
   getCategories(): string[] {
@@ -65,5 +76,9 @@ export class BlogDataService {
     return this.data.posts
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       .slice(0, limit);
+  }
+
+  getContentById(contentId: string): string | undefined {
+    return this.contentData.content[contentId];
   }
 }
