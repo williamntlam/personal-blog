@@ -54,7 +54,19 @@
       "tags": ["Life", "Reflection"],
       "featured": false,
       "contentId": "5"
+    },
+    {
+      "id": 6,
+      "title": "The Inevitable Loss of Self When Dating",
+      "excerpt": "A key reflection on dating that I realized",
+      "category": "Reflections",
+      "date": "2025-10-09",
+      "readTime": "10 min read",
+      "tags": ["Life", "Reflection"],
+      "featured": false,
+      "contentId": "6"
     }
+    
   ],
   "categories": [
     "Development",
